@@ -1,0 +1,117 @@
+// app global css in SCSS form
+.tela-index{
+    background-color: #202020;
+}
+.card-index{
+    width: 650px;
+    height: 550px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    
+    .titulo-index{
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 3rem;
+    }
+    
+    .opcoes{
+        width: 450px;
+        height: 65px;
+        background-color: #268810;
+        margin: auto;
+        padding-top: 1rem;
+
+        p{
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        
+        }
+    
+    
+    }
+}
+
+
+// app global css in SCSS form
+
+
+.card-cadastro{
+    margin: auto;
+    background-color: white;
+    width: 38vw;
+    height: 70vh;
+}
+
+h1{
+    text-align: center;
+    font-size:  4vh;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+}
+
+.input .q-field{
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+.caixa-input{
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5vw;
+    
+}
+
+.caixa-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+   
+   
+
+}
+
+.btn-login {
+    border-radius: 8px;
+    width: 25vw;
+    background-color: black;
+    color: white;
+    text-transform: none;
+  
+
+}
+.btn-opcoes{
+    border-radius: 8px;
+    width: 30vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    text-transform: none;
+}
+
+
+.criar-conta{
+   text-align: center;
+   margin-top: 2vw;
+   cursor: pointer;
+}
+
+.input-error input {
+    border-color: red !important;
+  }
+
+
+.card-listagem{
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    min-height: 30vh;
+    margin-top: 50px;
+    
+   
+    
+  }
