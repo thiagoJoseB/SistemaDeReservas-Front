@@ -88,9 +88,10 @@
     { name: 'cpf', label: 'CPF', align: 'left', field: 'cpf' },
     { name: 'data_criacao', label: 'Data de Criação', align: 'left', field: 'data_criacao' }
   ]"
-  row-key="id"
-  flat
-  bordered
+    row-key="id"
+            flat
+            bordered
+            no-data-label="Nenhum Resultado encontrado"
 />
 </q-card>
 

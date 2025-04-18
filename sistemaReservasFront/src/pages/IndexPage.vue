@@ -26,7 +26,7 @@
         </div>
 
         <div class="caixa-btn">
-          <q-btn @click="criarConta"
+          <q-btn @click="listarLocacoes"
             class="btn-opcoes"
             label="Busca de Locações Disponiveis por data"
           />
@@ -43,4 +43,11 @@ const router = useRouter()
 function criarConta () {
   router.push('/CadastroCliente')
 }
+
+function listarLocacoes () {
+  router.push('/ListarLocacoes')
+}
+
+
+
 </script>
