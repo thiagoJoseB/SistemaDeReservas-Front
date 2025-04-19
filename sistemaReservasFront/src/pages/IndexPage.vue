@@ -12,7 +12,7 @@
         </div>
 
         <div class="caixa-btn">
-          <q-btn @click="criarConta"
+          <q-btn @click="cadastrarLocacao"
             class="btn-opcoes"
             label="Cadastro e Consulta Tipo Locação"
           />
@@ -48,6 +48,8 @@ function listarLocacoes () {
   router.push('/ListarLocacoes')
 }
 
-
+function cadastrarLocacao() {
+  router.push('/CadastroLocacoes')
+}
 
 </script>
