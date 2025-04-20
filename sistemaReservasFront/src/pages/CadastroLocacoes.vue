@@ -129,7 +129,7 @@
   
   const router = useRouter()
   
-  // variáveis reativas do formulário
+ 
   const nome = ref('')
   const tipo = ref('')
   const descricao = ref('')
@@ -138,10 +138,10 @@
   const tempo_maximo = ref('')
   const data_criacao = ref('')
   
-  // lista de tipos de locação
-  const clientes = ref([]) // poderia chamar de "locacoes", mas como você usou "clientes" no q-table, mantive igual
+
+  const clientes = ref([]) 
   
-  // buscar os tipos de locação
+
   const buscarTiposLocacao = async () => {
     try {
       const response = await axios.get('http://localhost:3000/listarTipoLocacao')
@@ -152,17 +152,17 @@
     }
   }
   
-  // Executa ao carregar a página
+
   onMounted(() => {
     buscarTiposLocacao()
   })
   
-  // voltar
+
   function voltarIndex() {
     router.push('/')
   }
   
-  // cadastrar
+
   async function cadastrar() {
     if (
       nome.value === '' ||
@@ -189,7 +189,7 @@
   
       alert('Tipo de locação cadastrado com sucesso!')
   
-      // limpa os campos
+    
       nome.value = ''
       tipo.value = ''
       descricao.value = ''
@@ -198,7 +198,7 @@
       tempo_maximo.value = ''
       data_criacao.value = ''
   
-      // atualiza a tabela
+
       buscarTiposLocacao()
     } catch (error) {
       console.error('Erro ao cadastrar tipo de locação:', error)

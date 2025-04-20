@@ -105,28 +105,28 @@
   
   const router = useRouter()
   
-  // variáveis reativas do formulário
+
   const nome = ref('')
   const email = ref('')
   const telefone = ref('')
   const cpf = ref('')
   const data_criacao = ref('')
   
-  // lista de clientes
+
   const clientes = ref([])
   
-  // Função para buscar os clientes da API
+
   const buscarClientes = async () => {
   try {
     const response = await axios.get('http://localhost:3000/listarClientes')
-    clientes.value = response.data.data // <- acessa só o array de clientes aqui
+    clientes.value = response.data.data 
   } catch (error) {
     console.error('Erro ao buscar clientes:', error)
     alert('Erro ao buscar os dados dos clientes.')
   }
 }
 
-  // Executa ao carregar a página
+
   onMounted(() => {
     buscarClientes()
   })
@@ -163,10 +163,10 @@
       })
       alert('Cadastro realizado com sucesso!')
   
-      // Atualiza a lista na tabela
+      
       buscarClientes()
   
-      // Limpa os campos
+
       nome.value = ''
       email.value = ''
       telefone.value = ''

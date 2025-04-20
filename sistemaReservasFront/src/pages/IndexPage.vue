@@ -19,7 +19,7 @@
         </div>
 
         <div class="caixa-btn">
-          <q-btn @click="criarConta"
+          <q-btn @click="cadastrarReserva"
             class="btn-opcoes"
             label="Realizar e Visualizar Reservas"
           />
@@ -51,5 +51,11 @@ function listarLocacoes () {
 function cadastrarLocacao() {
   router.push('/CadastroLocacoes')
 }
+
+function cadastrarReserva() {
+  router.push('/CadastroReservas')
+}
+
+
 
 </script>
